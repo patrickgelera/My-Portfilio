@@ -1,0 +1,11 @@
+.project-card{
+    background-color: #343A40;
+    color: white;
+    min-height: 80vh;
+}
+.project-card h2{
+    margin-top: 0px;
+}
+.project-card iframe{
+    border-color: orange;
+}

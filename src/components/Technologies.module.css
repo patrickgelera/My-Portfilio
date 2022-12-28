@@ -1,0 +1,11 @@
+.techCard {
+  background-color: #343a40;
+  height: 10vh;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+.techCard h4 {
+  margin: 0.5rem 0 0 0;
+  font-weight: normal;
+}

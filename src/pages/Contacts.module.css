@@ -1,0 +1,44 @@
+.contact-details{
+    display: flex;
+    margin-top: 5rem;
+}
+.contact-details section{
+    width: 50%;   
+    margin: 0px auto;
+    border: 1px solid orange;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.contact-details span{
+    color: orange
+}
+.contact-details p{
+    color: white
+}
+.contact-details svg{
+    color:orange
+}
+.contact-details a{
+    font-size: 30px;
+}
+
+.contact-details .links{
+    margin-top: 3rem;
+    text-align: center;
+}
+.links a{
+    margin: 0rem 1rem
+}
+.contact-details a:hover{
+    margin: 0rem 1rem;
+    color: white;
+}
+.links a span{
+    /* margin-left: 5px; */
+    font-size: 15px;
+}
+@media only screen and (max-width: 480px){
+    .contact-details section{
+        width: 90%;   
+    }
+}

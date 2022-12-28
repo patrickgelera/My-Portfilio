@@ -1,0 +1,492 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(33, 37, 41);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+#root {
+  background-color: rgb(33, 37, 41);
+}
+.MainHeader {
+  height: 3rem;
+  width: 100%;
+}
+.homeContent h2 {
+  margin-bottom: 10px;
+}
+#contacts,
+#contacts-page {
+  margin-top: 0px;
+  min-height: 400px;
+  position: absolute;
+  min-width: 100%;
+  background-color: rgb(33, 37, 41);
+  color: rgb(159, 159, 159);
+}
+#contacts-page {
+  min-height: 95vh;
+}
+#contacts h2 {
+  margin: 0px auto;
+  display: block;
+  margin-top: 20px;
+}
+.division {
+  max-width: 40rem;
+  margin: 2rem auto;
+  margin-top: 50px;
+  display: block;
+  position: relative;
+}
+.certifcateDetails {
+  padding: 1%;
+  padding-bottom: 0px;
+}
+.homeContent {
+  animation: drop-in 1s ease 200ms backwards;
+  text-align: center;
+}
+
+.name {
+  color: black;
+  font-size: 20px;
+}
+.name:hover {
+  color: rgb(170, 113, 7);
+  font-weight: bolder;
+}
+
+.techs div {
+  vertical-align: top;
+}
+.techs,
+.certificate {
+  /* background-color: white; */
+  color: white;
+}
+.homeContent a {
+  color: white;
+  text-decoration: none;
+  background-color: orange;
+  padding: 1rem 2rem;
+  transition: 0.1s;
+  border-radius: 5px;
+  margin-top: 40rem;
+}
+.certificate,
+#projects {
+  padding: 2%;
+}
+.enlarge:hover {
+  font-size: 30px;
+}
+.homeContent a:hover {
+  padding: 1.1rem 2.1rem;
+  color: black;
+  font-weight: bold;
+  border-bottom: none;
+}
+.navcolumn {
+  display: inline-block;
+  width: 33.3%;
+  text-align: center;
+  height: 33vh;
+  /* background-color: rgba(129, 127, 127, 0.368); */
+  vertical-align: top;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navcolumn:hover {
+  color: black;
+}
+.shade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  background-color: rgba(123, 123, 123, 0.863);
+  transition: 0.2s;
+  font-weight: bold;
+  height: 100%;
+}
+.shade:hover {
+  color: black;
+  background-color: rgba(150, 147, 147, 0);
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9318,
+    0 0 30px #ff9318, 0 0 40px #ff9318, 0 0 55px #ff9318, 0 0 75px #ff9318,
+    0px 2px 20px rgba(206, 93, 60, 0);
+}
+
+span {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+.technologies img {
+  height: 5vh;
+}
+.technologies h4 {
+  font-size: 0.8em;
+}
+.technologies {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin: 5px 18px 0px 18px;
+}
+.techfields {
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+legend {
+  margin-left: 20px;
+  width: 155px;
+}
+#home {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 95vh;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+}
+
+.linkbtn img {
+  position: absolute;
+  width: 80vh;
+  height: 33vh;
+}
+.certifcateDetails h4 {
+  font-size: 20px;
+  margin: 0px;
+}
+.certifcateDetails h6 {
+  font-size: 15px;
+  margin: 0.5rem 0;
+}
+.certifcateDetails p {
+  font-size: 15px;
+}
+.projectDetails h4 {
+  font-size: 19px;
+  color: orange;
+  margin-top: 0;
+}
+.centered {
+  margin: 3rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titlecentered {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff9318;
+}
+.titlecentered h2 {
+  border-bottom: 2px solid #ff9318;
+  padding-bottom: 15px;
+}
+
+.projects {
+  width: 97%;
+  margin: 1%;
+  padding: 3%;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #212529;
+}
+.certificates {
+  box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 0.6);
+  background-color: #343a40;
+}
+.techCert {
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 480px) {
+  .designs {
+    display: inline-block;
+    width: 98%;
+    margin: 1%;
+  }
+  .name {
+    display: none;
+  }
+  .designs div {
+    /* margin: 5px .5% 0px .5%; */
+    width: 23%;
+  }
+  .certifcateDetails {
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+  }
+  .certificates img {
+    height: 100%;
+    max-width: 90px;
+  }
+  .certificates {
+    display: inline-block;
+    width: 97%;
+    margin: 1%;
+  }
+  .techfields {
+    padding: 10px 0px 10px 0px;
+  }
+  iframe {
+    width: 100%;
+    height: 200px;
+    border-color: orange;
+  }
+
+  .homeContent img {
+    border-radius: 50%;
+    height: 200px;
+    margin-top: 15%;
+    margin-bottom: 30px;
+  }
+  .homeContent h2 {
+    font-size: 25px;
+  }
+  .projects {
+    width: 94%;
+    margin: 1rem 0;
+  }
+}
+@media only screen and (min-width: 481px) {
+  .projects {
+    width: 94%;
+    margin: 1rem 0;
+  }
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+  .techfields {
+    padding: 10px 0px 10px 0px;
+  }
+  legend {
+    font-size: 15px;
+  }
+  .designs {
+    display: inline-block;
+    width: 98%;
+    margin: 1%;
+  }
+  .designs div {
+    /* margin: 5px 1% 0px 1%; */
+    width: 14%;
+  }
+  h5 {
+    font-size: 17px;
+  }
+  .frameworks h5,
+  .languages h5 {
+    font-size: 15px;
+  }
+  .certifcateDetails {
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+  }
+  .certificates img {
+    max-height: 100%;
+    width: 160px;
+  }
+  .certificates {
+    display: inline-block;
+    width: 97%;
+    margin: 1%;
+  }
+  .homeContent img {
+    border-radius: 50%;
+    height: 250px;
+    margin-top: 10%;
+    margin-bottom: 20px;
+  }
+  .homeContent h2 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .techs {
+    padding: 0px 40px 0px 40px;
+  }
+  .designs {
+    display: inline-block;
+    width: 97%;
+    margin: 1%;
+  }
+  iframe {
+    width: 28%;
+    height: 250px;
+  }
+  .experiences {
+    height: 100vh;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  .designs div {
+    /* margin: 5px 1% 0px 1%; */
+    width: 6%;
+  }
+
+  .webdesign {
+    padding-bottom: 3px;
+  }
+
+  .certifcateDetails {
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+  }
+  .certificates img {
+    max-height: 100%;
+    width: 160px;
+  }
+  .certificates {
+    display: inline-block;
+    width: 48%;
+    margin: 1%;
+  }
+
+  .projectDetails {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    width: 70%;
+  }
+  .homeContent h2 {
+    font-size: 50px;
+  }
+  .homeContent img {
+    border-radius: 50%;
+    height: 250px;
+    margin-top: 5%;
+  }
+  .projects {
+    padding: 1%;
+    width: 98%;
+    margin: 1rem 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .certifcateDetails {
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+  }
+  .homeContent img {
+    border-radius: 50%;
+    height: 250px;
+    margin-top: 5%;
+  }
+  .projects {
+    padding: 1%;
+    width: 98%;
+    margin: 1rem 0;
+  }
+}
+.techfields {
+  width: 100%;
+}
+.reveal {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.rotate {
+  position: absolute;
+  color: white;
+  animation: rotate 2s infinite linear;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.flip {
+  animation: flip 2s linear;
+}
+.type {
+  font-size: 25px;
+  white-space: nowrap;
+  width: 50%;
+  height: 30px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 1rem auto 5rem auto;
+  animation: typing 10s infinite linear;
+}
+.green {
+  background-color: greenyellow;
+  top: 15%;
+  left: 10%;
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+}
+.red {
+  background-color: orangered;
+  top: 70%;
+  left: 10%;
+  width: 60px;
+  height: 60px;
+  line-height: 55px;
+}
+.blue {
+  background-color: rgb(32, 114, 114);
+  top: 60%;
+  left: 90%;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes flip {
+  33% {
+    transform: rotate(45deg);
+  }
+  66% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
