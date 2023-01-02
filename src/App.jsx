@@ -12,10 +12,18 @@ const Contacts = React.lazy(() => import("./pages/Contacts"));
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [countDown, setCountDown] = useState(0);
-  // const count = setInterval(() => {
-  //   setCountDown(+countDown + 10);
-  //   console.log(countDown);
-  // }, 1000);
+  // const cursor = { x: 100, y: 100 };
+  // const moveCursor = (e) => {
+  //   cursor.x = e.clientX;
+  //   cursor.y = e.clientY;
+  //   document.getElementById(
+  //     "cursor"
+  //   ).style.cssText = `top:${cursor.y}px;left:${cursor.x}px;`;
+  //   document.getElementById(
+  //     "cursor-follower"
+  //   ).style.cssText = `top:${cursor.y}px;left:${cursor.x}px;`;
+  // };
+  // window.addEventListener("mousemove", moveCursor);
   let page = (
     <div className="centered">
       <Loading loaded={countDown} />
