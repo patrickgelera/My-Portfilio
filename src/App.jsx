@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import LoadingSpinner from "./components/UI/LoadingSpinner";
 import Loading from "./components/UI/Loading";
 import Home from "./pages/Home";
+import { ImArrowUp2 } from "react-icons/im";
 const About = React.lazy(() => import("./pages/About"));
 const Projects = React.lazy(() => import("./pages/Projects"));
 const Contacts = React.lazy(() => import("./pages/Contacts"));
@@ -12,24 +13,14 @@ const Contacts = React.lazy(() => import("./pages/Contacts"));
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [countDown, setCountDown] = useState(0);
-  // const cursor = { x: 100, y: 100 };
-  // const moveCursor = (e) => {
-  //   cursor.x = e.clientX;
-  //   cursor.y = e.clientY;
-  //   document.getElementById(
-  //     "cursor"
-  //   ).style.cssText = `top:${cursor.y}px;left:${cursor.x}px;`;
-  //   document.getElementById(
-  //     "cursor-follower"
-  //   ).style.cssText = `top:${cursor.y}px;left:${cursor.x}px;`;
-  // };
-  // window.addEventListener("mousemove", moveCursor);
   let page = (
     <div className="centered">
       <Loading loaded={countDown} />
     </div>
   );
-
+  const ScrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
   setTimeout(() => {
     setCountDown(100);
     setTimeout(() => {
@@ -39,7 +30,10 @@ const App = () => {
   if (!isLoading) {
     page = (
       <>
-        <div className="MainHeader"></div>
+        <button onClick={ScrollToTop} className="ScrollToTop">
+          <ImArrowUp2 />
+        </button>
+        <div className="MainHeader" id="top"></div>
         <Header />
         <Suspense
           fallback={

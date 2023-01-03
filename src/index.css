@@ -93,6 +93,28 @@ code {
   /* background-color: white; */
   color: white;
 }
+.ScrollToTop {
+  position: fixed;
+  bottom: 1rem;
+  right: 3rem;
+  z-index: 12;
+  background-color: orange;
+  color: white;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: none;
+  padding: 0.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.ScrollToTop:hover {
+  padding: 1rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  bottom: 0.8rem;
+  right: 2.8rem;
+}
 .homeContent a {
   color: white;
   text-decoration: none;
