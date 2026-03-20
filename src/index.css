@@ -444,8 +444,8 @@ code {
 /* About, Projects, Contacts sections get inner padding on wide screens */
 #about,
 #projects {
-  padding-left: max(2rem, calc((100vw - 1280px) / 2));
-  padding-right: max(2rem, calc((100vw - 1280px) / 2));
+  padding-left: clamp(1.5rem, 3vw, 4rem);
+  padding-right: clamp(1.5rem, 3vw, 4rem);
   box-sizing: border-box;
 }
 
