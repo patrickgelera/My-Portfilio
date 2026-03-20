@@ -29,7 +29,7 @@ const About = (props) => {
         <div className="bioContent">
           <p>
             Hi! I'm <span className="bioHighlight">John Patrick Gelera</span> — a tech
-            professional from Santa Maria, Bulacan, Philippines with
+            professional from Philippines with
             <span className="bioHighlight"> 14+ years of industry experience</span>.
             I spent 11 years as a Telecom Engineer before successfully transitioning into
             web development in 2023.
