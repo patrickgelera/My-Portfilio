@@ -1,20 +1,44 @@
 .loadingContainer {
-  color: rgba(255, 255, 255, 0.605);
-  width: 40%;
-  display: block;
-  position: absolute;
-  top: 30%;
+  color: #8b949e;
+  width: 380px;
+  max-width: 85vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
+
+.loadingContainer h1 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.5rem;
+  color: #00e676;
+}
+
+.loadingContainer h1::before {
+  content: "> ";
+  color: #8b949e;
+}
+
 .loadingBar {
-  border: 1px solid orange;
-  min-height: 10px;
+  border: 1px solid rgba(0, 230, 118, 0.3);
+  background-color: rgba(0, 230, 118, 0.05);
+  min-height: 4px;
   width: 100%;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .loadingFill {
-  height: 10px;
-  background-color: rgb(220, 219, 219);
-  transition: 2s;
-  border-radius: 5px;
+  height: 4px;
+  background: linear-gradient(90deg, #00e676, #00bcd4);
+  transition: width 2s ease;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 230, 118, 0.6);
 }

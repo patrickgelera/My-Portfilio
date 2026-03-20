@@ -29,15 +29,6 @@ const Header = () => {
           <li>
             <NavLink
               className={(navlink) => (navlink.isActive ? classes.active : "")}
-              to="/projects"
-              preventScrollReset={true}
-            >
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className={(navlink) => (navlink.isActive ? classes.active : "")}
               to="/contacts"
               preventScrollReset={true}
             >

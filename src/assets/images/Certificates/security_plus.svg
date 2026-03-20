@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220">
+  <!-- Outer shield -->
+  <path d="M110 8 L195 46 L195 118 C195 167 152 196 110 208 C68 196 25 167 25 118 L25 46 Z"
+        fill="#0d1117" stroke="#00e676" stroke-width="3"/>
+  <!-- Inner shield ring -->
+  <path d="M110 22 L182 56 L182 118 C182 160 144 184 110 195 C76 184 38 160 38 118 L38 56 Z"
+        fill="none" stroke="rgba(0,230,118,0.25)" stroke-width="1.5"/>
+  <!-- Lock body -->
+  <rect x="90" y="95" width="40" height="32" rx="5" fill="#00e676"/>
+  <!-- Lock shackle -->
+  <path d="M97 95 L97 82 Q110 68 123 82 L123 95"
+        fill="none" stroke="#00e676" stroke-width="5" stroke-linecap="round"/>
+  <!-- Keyhole -->
+  <circle cx="110" cy="111" r="5" fill="#0d1117"/>
+  <rect x="108" y="111" width="4" height="8" rx="1" fill="#0d1117"/>
+  <!-- CompTIA text -->
+  <text x="110" y="155" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="13" font-weight="bold"
+        letter-spacing="1" fill="#00e676">CompTIA</text>
+  <!-- Security+ text -->
+  <text x="110" y="174" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="15" font-weight="bold"
+        fill="white">Security+</text>
+  <!-- Bottom accent line -->
+  <line x1="75" y1="180" x2="145" y2="180" stroke="rgba(0,230,118,0.4)" stroke-width="1.5"/>
+</svg>

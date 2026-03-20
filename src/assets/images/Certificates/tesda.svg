@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" rx="12" fill="#1a1a2e"/>
+  <rect x="8" y="8" width="104" height="104" rx="8" fill="none" stroke="#00e676" stroke-width="2"/>
+  <text x="60" y="46" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="13" font-weight="900"
+        fill="#00e676" letter-spacing="2">TESDA</text>
+  <line x1="20" y1="52" x2="100" y2="52" stroke="#00e676" stroke-width="1" opacity="0.4"/>
+  <text x="60" y="66" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="8" font-weight="600"
+        fill="#ffffff">Web Development</text>
+  <text x="60" y="77" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="8" font-weight="600"
+        fill="#ffffff">Level II</text>
+  <text x="60" y="94" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="7" font-weight="400"
+        fill="#00e676" opacity="0.8">NC II Certified</text>
+</svg>

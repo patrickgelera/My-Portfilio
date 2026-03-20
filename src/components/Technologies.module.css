@@ -1,11 +1,21 @@
 .techCard {
-  background-color: #343a40;
-  height: 10vh;
-  padding: 0.5rem;
-  border-radius: 5px;
-  margin: 0.5rem;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  height: auto;
+  min-height: 80px;
+  padding: 0.6rem 0.5rem;
+  border-radius: 8px;
+  margin: 0.4rem;
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
 }
+
+.techCard:hover {
+  border-color: rgba(0, 230, 118, 0.35);
+  background-color: rgba(0, 230, 118, 0.05);
+}
+
 .techCard h4 {
-  margin: 0.5rem 0 0 0;
-  font-weight: normal;
+  margin: 0.4rem 0 0 0;
+  font-weight: 400;
+  color: #8b949e;
 }
