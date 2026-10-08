@@ -3,7 +3,7 @@ import classes from "./Contacts.module.css";
 import { ImFacebook2, ImLinkedin, ImGithub, ImProfile } from "react-icons/im";
 import { FiCopy, FiCheck } from "react-icons/fi";
 
-const EMAIL = "patrick.gelera1@gmail.com";
+const EMAIL = "patrick.gelera22@gmail.com";
 
 const Contacts = () => {
   const [copied, setCopied] = useState(false);
@@ -68,7 +68,7 @@ const Contacts = () => {
             <a href="https://github.com/patrickgelera" target="_blank" rel="noreferrer" title="GitHub">
               <ImGithub />
             </a>
-            <a href="https://drive.google.com/file/d/1-I--GfNxFyDVJ9fSMT-1LVCmyE8rQ5qu/view?usp=sharing" target="_blank" rel="noreferrer" title="Resume">
+            <a href="https://drive.google.com/file/d/1wGr1KEwPLCYyBlN3uFwnxAfpwYVxIuI2/view?usp=sharing" target="_blank" rel="noreferrer" title="Resume">
               <ImProfile />
             </a>
           </div>

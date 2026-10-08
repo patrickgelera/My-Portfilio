@@ -5,7 +5,7 @@ import Typewriter from "../components/Typewriter";
 import useCountUp from "../hooks/useCountUp";
 
 const RESUME_URL =
-  "https://drive.google.com/file/d/1-I--GfNxFyDVJ9fSMT-1LVCmyE8rQ5qu/view?usp=sharing";
+  "https://drive.google.com/file/d/1wGr1KEwPLCYyBlN3uFwnxAfpwYVxIuI2/view?usp=sharing";
 
 function Home() {
   function reveal() {
@@ -47,8 +47,9 @@ function Home() {
             </h2>
 
             <div className="roleBadges">
-              <span className="roleBadge badgeGreen">⬡ Frontend Dev · BigCommerce</span>
-              <span className="roleBadge badgeCyan">⬡ Cybersecurity Trainee</span>
+              <span className="roleBadge badgeGreen">⬡ Frontend Dev · BigCommerce · Shopify</span>
+              <span className="roleBadge badgeGreen">⬡ Quality Assurance</span>
+              <span className="roleBadge badgeCyan">⬡ Security+ Trained</span>
               <span className="roleBadge badgeTelecom">⬡ Ex-Telecom Engineer</span>
             </div>
 
@@ -90,7 +91,7 @@ function Home() {
           <div className="heroRight">
             <div className="photoWrapper">
               <img
-                src={require("../assets/images/profile2.jpg")}
+                src={require("../assets/images/profile2.png")}
                 alt="John Patrick Gelera"
               />
             </div>

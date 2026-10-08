@@ -8,10 +8,14 @@ function Techs(props) {
         props.animate ? "reveal" : ""
       }`}
     >
-      <img
-        src={require(`../assets/images/Technologies/${props.url}`)}
-        alt={props.url}
-      />
+      {props.icon ? (
+        <props.icon style={{ fontSize: "5vh", color: props.color }} />
+      ) : (
+        <img
+          src={require(`../assets/images/Technologies/${props.url}`)}
+          alt={props.url}
+        />
+      )}
       <h4>{props.tech}</h4>
     </div>
   );

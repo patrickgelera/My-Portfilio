@@ -14,8 +14,17 @@ import {
   FaEye,
   FaServer,
   FaBug,
+  FaCubes,
+  FaClipboardCheck,
 } from "react-icons/fa";
-import { SiKalilinux, SiWireshark, SiPython } from "react-icons/si";
+import {
+  SiKalilinux,
+  SiWireshark,
+  SiPython,
+  SiShopify,
+  SiLess,
+  SiGithubactions,
+} from "react-icons/si";
 
 const About = (props) => {
   return (
@@ -28,14 +37,17 @@ const About = (props) => {
         </div>
         <div className="bioContent">
           <p>
-            Hi! I'm <span className="bioHighlight">John Patrick Gelera</span> — a tech
-            professional from Philippines with
-            <span className="bioHighlight"> 14+ years of industry experience</span>.
-            I spent 11 years as a Telecom Engineer before successfully transitioning into
-            web development in 2023.
+            Hi! I'm <span className="bioHighlight">John Patrick Gelera</span> — a Frontend
+            Web Developer from the Philippines with
+            <span className="bioHighlight"> 3+ years of experience in e-commerce development
+            and quality assurance</span> at Four13 Digital. I build and maintain BigCommerce
+            storefronts using Stencil, React, JavaScript, and TypeScript, and have contributed
+            bug fixes, new features, and QA testing to a client Shopify store. Before tech, I
+            spent 10 years in telecommunications engineering, technical documentation, and
+            team leadership.
           </p>
           <p>
-            Now in 2026, I'm taking the next leap — entering cybersecurity training to combine
+            In 2026, I completed CompTIA Security+ training to combine
             my deep networking background with modern security skills. My telecom roots give me
             a natural edge in understanding <span className="bioHighlight">network security,
             infrastructure, and system vulnerabilities</span> that most developers don't have.
@@ -44,6 +56,8 @@ const About = (props) => {
             <span className="bioTag"># 14-yrs-in-tech</span>
             <span className="bioTag"># telecom-background</span>
             <span className="bioTag"># bigcommerce-developer</span>
+            <span className="bioTag"># shopify</span>
+            <span className="bioTag"># quality-assurance</span>
             <span className="bioTag"># frontend-react</span>
             <span className="bioTag"># cybersec-trainee</span>
           </div>
@@ -86,8 +100,11 @@ const About = (props) => {
             <p className="techGroupLabel">&lt; Frontend /&gt;</p>
             <div className="techGroupCards">
               <Technologies url="bigcommerce.svg"  tech="BigCommerce"       animate={props.animate} />
+              <Technologies icon={SiShopify}       tech="Shopify"           color="#96bf48" animate={props.animate} />
+              <Technologies icon={FaCubes}         tech="Stencil"           color="#00bcd4" animate={props.animate} />
               <Technologies url="html.png"          tech="HTML"              animate={props.animate} />
               <Technologies url="css.png"          tech="CSS"               animate={props.animate} />
+              <Technologies icon={SiLess}          tech="LESS"              color="#4d8fd6" animate={props.animate} />
               <Technologies url="JavaScript.png"   tech="JavaScript"        animate={props.animate} />
               <Technologies url="typescript.png"   tech="TypeScript"        animate={props.animate} />
               <Technologies url="react.png"        tech="React JS"          animate={props.animate} />
@@ -106,6 +123,7 @@ const About = (props) => {
             <p className="techGroupLabel">&lt; Backend &amp; Database /&gt;</p>
             <div className="techGroupCards">
               <Technologies url="nodejs.png"      tech="NodeJS"      animate={props.animate} />
+              <Technologies url="express.png"     tech="Express"     animate={props.animate} />
               <Technologies url="php.png"         tech="PHP"         animate={props.animate} />
               <Technologies url="codeigniter.png" tech="CodeIgniter" animate={props.animate} />
               <Technologies url="socket.png"      tech="Socket.IO"   animate={props.animate} />
@@ -116,9 +134,12 @@ const About = (props) => {
           </div>
 
           <div className="techGroup">
-            <p className="techGroupLabel">&lt; DevOps &amp; Tools /&gt;</p>
+            <p className="techGroupLabel">&lt; QA &amp; Dev Tools /&gt;</p>
             <div className="techGroupCards">
+              <Technologies icon={FaClipboardCheck} tech="Manual Testing" color="#00e676" animate={props.animate} />
+              <Technologies icon={FaBug}            tech="Bug Tracking"   color="#ff5252" animate={props.animate} />
               <Technologies url="git.png"      tech="Git / Github" animate={props.animate} />
+              <Technologies icon={SiGithubactions} tech="GitHub Actions" color="#2088ff" animate={props.animate} />
               <Technologies url="docker.png"   tech="Docker"       animate={props.animate} />
               <Technologies url="jenkins.png"  tech="Jenkins"      animate={props.animate} />
               <Technologies url="selenium.png" tech="Selenium"     animate={props.animate} />
@@ -171,50 +192,50 @@ const About = (props) => {
           <Certificates
             url="WF.png"
             cert="Certificate in Web Fundamentals"
-            training="Village88 — FullStack Web Development"
+            training="Village88 — Full-Stack Web Development · 2022"
             details="Cloned a full webpage using pure HTML and CSS within a 4-hour time limit."
             animate={props.animate}
           />
           <Certificates
             url="PHP.png"
             cert="Certificate in Advanced PHP"
-            training="Village88 — FullStack Web Development"
+            training="Village88 — Full-Stack Web Development · 2022"
             details="Built a full frontend and backend app using HTML, CSS, JavaScript, jQuery, Ajax, CodeIgniter, and MySQL from a given wireframe in 5 hours."
             animate={props.animate}
           />
           <Certificates
             url="javascript.png"
             cert="Certificate in Advanced JavaScript"
-            training="Village88 — FullStack Web Development"
+            training="Village88 — Full-Stack Web Development · 2022"
             details="Built a real-time full-stack app using HTML, CSS, JavaScript ES6, Node.js, Express, and Socket.IO from a wireframe in 5 hours."
             animate={props.animate}
           />
           <Certificates
             url="FE.png"
             cert="Certificate in Frontend Track"
-            training="Village88 — FullStack Web Development"
+            training="Village88 — Full-Stack Web Development · 2022"
             details="Built a complete React.js application within 5 hours from a given specification."
             animate={props.animate}
           />
           <Certificates
             url="security_plus.svg"
             cert="CompTIA Security+ Training"
-            training="RivanCyber Training Institute INC."
-            details="Completed foundational cybersecurity training covering network security, threats & vulnerabilities, cryptography, access control, and security operations."
+            training="Rivancyber Training Institute Inc. · 2026"
+            details="Completed training in network security, threats and vulnerabilities, cryptography, access control, and security operations."
             animate={props.animate}
           />
           <Certificates
             url="tesda.svg"
             cert="Web Development Level II (NC II)"
-            training="RVN TECH-VOC INC. — TESDA"
+            training="RVN Tech-Voc Inc. — TESDA · 2018"
             details="TESDA National Certificate II in Web Development — covering HTML, CSS, JavaScript, and responsive web design standards."
             animate={props.animate}
           />
           <Certificates
             url="cisco.svg"
-            cert="Cisco Router and Switching"
-            training="Ironlink Computer Learning Center"
-            details="Completed Cisco Router and Switching training covering network fundamentals, routing protocols (OSPF, EIGRP), VLANs, and switching concepts."
+            cert="Cisco Routing and Switching Training"
+            training="Ironlink Computer Learning Center · 2017"
+            details="Hands-on training using physical Cisco routers and switches."
             animate={props.animate}
           />
         </section>
