@@ -1,3 +1,4 @@
+import SectionScene from "../components/SectionScene";
 import { useState } from "react";
 import classes from "./Contacts.module.css";
 import { ImFacebook2, ImLinkedin, ImGithub, ImProfile } from "react-icons/im";
@@ -37,6 +38,7 @@ const Contacts = () => {
 
         {/* ── INFO ── */}
         <section className="division">
+          <SectionScene variant="connections" />
           <p>
             E-mail:{" "}
             <span>{EMAIL}</span>

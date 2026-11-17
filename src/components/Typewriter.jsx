@@ -4,7 +4,7 @@ const phrases = [
   "Building secure & scalable web solutions",
   "Learning ethical hacking & pen testing",
   "Crafting clean code, one line at a time",
-  "Open to full-stack & cybersecurity roles",
+  "Open to new opportunities",
 ];
 
 const Typewriter = () => {

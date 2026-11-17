@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Contacts from "./Contacts";
 import About from "./About";
 import Typewriter from "../components/Typewriter";
+import NetworkGlobe from "../components/NetworkGlobe";
 import useCountUp from "../hooks/useCountUp";
 
 const RESUME_URL =
@@ -89,15 +90,18 @@ function Home() {
 
           {/* ── RIGHT ── */}
           <div className="heroRight">
-            <div className="photoWrapper">
-              <img
-                src={require("../assets/images/profile2.png")}
-                alt="John Patrick Gelera"
-              />
+            <div className="heroVisual">
+              <NetworkGlobe />
+              <div className="photoWrapper">
+                <img
+                  src={require("../assets/images/profile2.png")}
+                  alt="John Patrick Gelera"
+                />
+              </div>
             </div>
             <div className="availableBadge">
               <span className="availableDot" />
-              Open to cybersecurity roles
+              Available for work
             </div>
           </div>
         </div>

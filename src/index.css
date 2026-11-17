@@ -1444,3 +1444,22 @@ legend {
   66%  { transform: rotate(-45deg); }
   100% { transform: rotate(0deg); }
 }
+
+/* Network globe and portrait share one compact hero visual. */
+.heroVisual { position: relative; }
+.heroVisual .photoWrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 76px;
+  height: 76px;
+}
+.heroVisual .photoWrapper img { box-sizing: border-box; }
+@media (max-width: 768px) {
+  .heroVisual .photoWrapper { width: 62px; height: 62px; right: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .heroVisual .photoWrapper::before,
+  .heroVisual .photoWrapper::after { animation: none; }
+  .heroVisual .photoWrapper:hover { transform: none; }
+}

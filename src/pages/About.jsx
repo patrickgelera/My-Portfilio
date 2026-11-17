@@ -1,3 +1,5 @@
+import SectionScene from "../components/SectionScene";
+import SkillCluster from "../components/SkillCluster";
 import Technologies from "../components/Technologies";
 import Certificates from "../components/Certificates";
 import CyberSkill from "../components/CyberSkill";
@@ -94,6 +96,8 @@ const About = (props) => {
           <h2>Technologies</h2>
         </div>
 
+        <SkillCluster />
+
         <div className="techGroups">
 
           <div className="techGroup">
@@ -154,6 +158,7 @@ const About = (props) => {
         <div className="titlecentered cyberTitle">
           <h2>Cybersecurity Skills</h2>
         </div>
+        <SectionScene variant="shield" />
         <p className="cyberSubtitle">
           Currently pursuing cybersecurity — building skills in ethical hacking, network analysis, and web application security.
         </p>

@@ -4,7 +4,7 @@ import classes from "./Loading.module.css";
 const Loading = (props) => {
   return (
     <div className={classes.loadingContainer}>
-      <h1>Hi! Welcome to my Portfolio!</h1>
+      <h1>loading portfolio...</h1>
       <div className={classes.loadingBar}>
         <div
           className={classes.loadingFill}

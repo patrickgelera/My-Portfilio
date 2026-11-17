@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import { ImArrowUp2 } from "react-icons/im";
 import ScrollProgress from "./components/ScrollProgress";
 import PageTransition from "./components/PageTransition";
+import profilePhoto from "./assets/images/profile2.png";
 const About = React.lazy(() => import("./pages/About"));
 const Contacts = React.lazy(() => import("./pages/Contacts"));
 
@@ -24,12 +25,39 @@ const App = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Loading sequence
+  // Loading sequence: wait for the page, fonts, and profile photo to load
   useEffect(() => {
-    const fillTimer = setTimeout(() => setCountDown(100), 3000);
-    const hideTimer = setTimeout(() => setIsLoading(false), 5000);
+    let cancelled = false;
+    let hideTimer;
+
+    const pageLoaded = new Promise((resolve) => {
+      if (document.readyState === "complete") resolve();
+      else window.addEventListener("load", resolve, { once: true });
+    });
+    const fontsLoaded = document.fonts ? document.fonts.ready : Promise.resolve();
+    const photoLoaded = new Promise((resolve) => {
+      const img = new Image();
+      img.onload = img.onerror = resolve;
+      img.src = profilePhoto;
+    });
+
+    const tasks = [pageLoaded, fontsLoaded, photoLoaded];
+    let done = 0;
+    setCountDown(10);
+    tasks.forEach((task) =>
+      task.then(() => {
+        done += 1;
+        if (!cancelled) setCountDown(10 + (90 * done) / tasks.length);
+      })
+    );
+
+    Promise.all(tasks).then(() => {
+      // Short pause so the bar visibly reaches 100%
+      if (!cancelled) hideTimer = setTimeout(() => setIsLoading(false), 400);
+    });
+
     return () => {
-      clearTimeout(fillTimer);
+      cancelled = true;
       clearTimeout(hideTimer);
     };
   }, []);

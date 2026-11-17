@@ -1,3 +1,4 @@
+import SectionScene from "../components/SectionScene";
 import Project from "../components/Projects";
 import classes from "./Projects.module.css";
 
@@ -10,6 +11,8 @@ const Projects = (props) => {
       <div className="titlecentered">
         <h2>Projects</h2>
       </div>
+
+      <SectionScene variant="monitor" />
 
       <div>
         <Project

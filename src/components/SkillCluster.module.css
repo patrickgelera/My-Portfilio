@@ -1,0 +1,37 @@
+.panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: min(920px, 100%);
+  margin: 24px auto 32px;
+  border: 1px solid #00bcd433;
+  border-radius: 18px;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 20% 40%, #00e6760c, transparent 65%), #10171e;
+  text-align: left;
+  box-sizing: border-box;
+}
+.visual { position: relative; height: 340px; min-width: 0; }
+.visual canvas { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
+.fallback { display: grid; align-content: center; height: 100%; text-align: center; color: #00e676; font: 14px 'JetBrains Mono', monospace; line-height: 2; }
+.fallback span { color: #8b949e; font-size: 12px; }
+.visual[data-ready="true"] .fallback { visibility: hidden; }
+.visualLabel { position: absolute; bottom: 20px; left: 24px; color: #8b949e; font: 10px 'JetBrains Mono', monospace; letter-spacing: 0.15em; pointer-events: none; }
+.content { padding: 28px 24px; min-width: 0; }
+.eyebrow { color: #8b949e; font: 11px 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: 0.1em; margin: 0 0 16px; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; }
+.controls button, .pause { font: 11px 'JetBrains Mono', monospace; color: #b8c9ca; background: #161b22; border: 1px solid #303e45; border-radius: 6px; padding: 9px 10px; cursor: pointer; }
+.controls button[aria-pressed="true"] { border-color: #00e676; background: #00e67612; color: #e6edf3; }
+.controls button:hover, .pause:hover { border-color: #00bcd4; }
+.panel button:focus-visible { outline: 2px solid #00e676; outline-offset: 3px; }
+.detail { min-height: 168px; }
+.detail h3 { font-size: 20px; margin: 20px 0 8px; }
+.detail p { color: #a4afb9; font-size: 14px; line-height: 1.7; margin: 0 0 12px; }
+.detail ul { display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 0 0 16px; list-style: none; }
+.detail li { color: #c7d4d8; border: 1px solid #303e45; border-radius: 20px; font-size: 11px; padding: 5px 9px; }
+.pause { margin-top: 12px; }
+@media (max-width: 700px) {
+  .panel { grid-template-columns: 1fr; }
+  .visual { height: 260px; }
+  .content { padding: 16px 20px 24px; }
+  .detail { min-height: 0; }
+}
